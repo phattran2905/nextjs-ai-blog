@@ -2,6 +2,7 @@ import Image from "next/image";
 import Trending from "./(home)/Trending";
 import Tech from "./(home)/Tech";
 import Travel from "./(home)/Travel";
+import Other from "./(shared)/Other";
 
 export default function Home() {
 	return (
@@ -11,7 +12,7 @@ export default function Home() {
 				<div className="basis-3/4">
 					<Tech />
 					<Travel />
-					<div>Other</div>
+					<Other />
 					<div className="hidden md:block">
 						<div>CTA Subcribe</div>
 					</div>
