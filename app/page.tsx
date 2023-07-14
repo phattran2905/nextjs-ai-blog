@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Trending from "./(home)/Trending";
-import Tech from "./(home)/Tech";
-import Travel from "./(home)/Travel";
-import Other from "./(shared)/Other";
+import Trending from "app/(home)/Trending";
+import Tech from "app/(home)/Tech";
+import Travel from "app/(home)/Travel";
+import Other from "app/(shared)/Other";
+import Subscribe from "@/app/(shared)/Subscribe";
 
 export default function Home() {
 	return (
@@ -14,7 +15,7 @@ export default function Home() {
 					<Travel />
 					<Other />
 					<div className="hidden md:block">
-						<div>CTA Subcribe</div>
+						<Subscribe />
 					</div>
 				</div>
 				<div className="basis-1/4">{/* Sidebar */}a</div>
