@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Trending from "./(home)/Trending";
+import Tech from "./(home)/Tech";
+import Travel from "./(home)/Travel";
 
 export default function Home() {
 	return (
@@ -7,8 +9,8 @@ export default function Home() {
 			<Trending />
 			<div className="md:flex gap-10 mb-5">
 				<div className="basis-3/4">
-					<div>Tech</div>
-					<div>Trave;</div>
+					<Tech />
+					<Travel />
 					<div>Other</div>
 					<div className="hidden md:block">
 						<div>CTA Subcribe</div>
