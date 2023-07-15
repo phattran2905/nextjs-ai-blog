@@ -16,7 +16,8 @@ export async function POST(request: Request, response: any) {
 			messages: [
 				{
 					role: "user",
-					content: `Create small blog post with html tags based on this title: ${title}`,
+					// content: `Create small blog post with html tags based on this title: ${title}`,
+					content: `Create 3 line  blog post with html tags based on this title: ${title}`,
 				},
 				{
 					role: "system",
@@ -24,7 +25,10 @@ export async function POST(request: Request, response: any) {
 				},
 			],
 		});
-		console.log(apiResponse.data.choices[0].message);
+
+		// On-demand revalidation
+		// response.revalidate("/api/posts")
+
 		return NextResponse.json(
 			{ content: apiResponse.data.choices[0].message?.content },
 			{ status: 200 }
