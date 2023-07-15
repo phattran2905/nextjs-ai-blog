@@ -68,7 +68,7 @@ export default async function Home() {
 					</div>
 				</div>
 				<div className="basis-1/4">
-					<Sidebar />{" "}
+					<Sidebar />
 				</div>
 			</div>
 		</main>
