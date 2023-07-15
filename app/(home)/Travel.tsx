@@ -15,24 +15,24 @@ export default function Travel({ travelPosts }: Props) {
 			{/* Cards Row */}
 			<div className="sm:flex justify-between gap-8">
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500 basis-1/3"
+					className="mt-5 sm:mt-0 basis-1/3"
 					imageHeight={"h-80"}
 					post={travelPosts[0]}
 				/>
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500 basis-1/3"
+					className="mt-5 sm:mt-0 basis-1/3"
 					imageHeight={"h-80"}
 					post={travelPosts[1]}
 				/>
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500 basis-1/3"
+					className="mt-5 sm:mt-0 basis-1/3"
 					imageHeight={"h-80"}
 					post={travelPosts[2]}
 				/>
 			</div>
 
 			<Card
-				className="sm:flex justify-between items-center gap-3 mt-7 mb-5 bg-wh-500"
+				className="sm:flex justify-between items-center gap-3 mt-7 mb-5"
 				imageHeight={"h-80"}
 				post={travelPosts[3]}
 			/>

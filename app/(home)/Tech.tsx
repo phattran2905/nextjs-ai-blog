@@ -17,25 +17,25 @@ export default function Tech({ techPosts }: Props) {
 			{/* Grid */}
 			<div className="sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5">
 				<Card
-					className="col-span-1 row-span-3 bg-wh-500"
+					className="col-span-1 row-span-3 "
 					imageHeight={"h-96"}
 					isLongForm={true}
 					post={techPosts[0]}
 				/>
 				<Card
-					className="col-span-1 row-span-1 bg-wh-500 mt-10 sm:mt-0 flex justify-between gap-3"
+					className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
 					imageHeight={"h-48"}
 					isSmallCard={true}
 					post={techPosts[1]}
 				/>
 				<Card
-					className="col-span-1 row-span-1 bg-wh-500 mt-10 sm:mt-0 flex justify-between gap-3"
+					className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
 					imageHeight={"h-48"}
 					isSmallCard={true}
 					post={techPosts[2]}
 				/>
 				<Card
-					className="col-span-1 row-span-1 bg-wh-500 mt-10 sm:mt-0 flex justify-between gap-3"
+					className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
 					imageHeight={"h-48"}
 					isSmallCard={true}
 					post={techPosts[3]}

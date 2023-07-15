@@ -11,22 +11,22 @@ export default function Other({ otherPosts }: Props) {
 
 			<div className="sm:grid grid-cols-2 gap-16">
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500"
+					className="mt-5 sm:mt-0"
 					imageHeight={"h-80"}
 					post={otherPosts[0]}
 				/>
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500"
+					className="mt-5 sm:mt-0"
 					imageHeight={"h-80"}
 					post={otherPosts[1]}
 				/>
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500"
+					className="mt-5 sm:mt-0"
 					imageHeight={"h-80"}
 					post={otherPosts[2]}
 				/>
 				<Card
-					className="mt-5 sm:mt-0 bg-wh-500"
+					className="mt-5 sm:mt-0"
 					imageHeight={"h-80"}
 					post={otherPosts[3]}
 				/>
