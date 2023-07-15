@@ -1,7 +1,8 @@
+import { Post } from "@prisma/client";
 import Card from "./Card";
 
-type Props = {};
-export default function Other({}: Props) {
+type Props = { otherPosts: Array<Post> };
+export default function Other({ otherPosts }: Props) {
 	return (
 		<section className="mb-16 pt-4">
 			<hr className="border-1" />
@@ -12,18 +13,22 @@ export default function Other({}: Props) {
 				<Card
 					className="mt-5 sm:mt-0 bg-wh-500"
 					imageHeight={"h-80"}
+					post={otherPosts[0]}
 				/>
 				<Card
 					className="mt-5 sm:mt-0 bg-wh-500"
 					imageHeight={"h-80"}
+					post={otherPosts[1]}
 				/>
 				<Card
 					className="mt-5 sm:mt-0 bg-wh-500"
 					imageHeight={"h-80"}
+					post={otherPosts[2]}
 				/>
 				<Card
 					className="mt-5 sm:mt-0 bg-wh-500"
 					imageHeight={"h-80"}
+					post={otherPosts[3]}
 				/>
 			</div>
 		</section>
